@@ -1,0 +1,19 @@
+{
+  "name": "perguntas-e-respostas",
+  "version": "1.0.0",
+  "description": "Site de perguntas e respostas feito com Node e EJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.5.0"
+  }
+}

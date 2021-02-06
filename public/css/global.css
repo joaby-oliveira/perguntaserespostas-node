@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  text-decoration: none;
+  outline: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  background: #0f2024;
+  color: #fff;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+a {
+  color: #fff;
+  transition: 0.2s color;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #257e91;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.box {
+  background: #f8f8f8;
+  color: #404040;
+  box-shadow: 0 10px 10px #00000010;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 30%;
+  border-radius: 10px;
+  padding: 60px;
+  margin: 30px 0;
+}
+
+.description {
+  width: 100%;
+  margin-top: 0;
+  padding: 15px 0 30px 0;
+
+  font-family: 'Arial';
+}
+
+.description:before, .answer:after{
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 15px;
+  background: #ddd;
+}

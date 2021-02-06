@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/forms.css">
+  <link rel="stylesheet" href="/css/answer.css">
+
+  <title>
+    <%= question.title %>
+  </title>
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Perguntas e respostas</a></li>
+      <li><a href="/perguntar">Perguntar +</a></li>
+    </ul>
+  </nav>
+  <div class="box">
+    <h2 class="title">
+      <%= question.title %>
+    </h2>
+    <p class="description">
+      <%= question.description %>
+    </p>
+    <form action="/responder" method="post">
+      <div class="input-block">
+        <input type="text" id="text" placeholder="Digite sua resposta" name="text">
+      </div>
+      <input type="submit" class="button" value="Responder">
+      <input type="hidden" name="questionId" value="<%= question.id %>">
+    </form>
+  </div>
+
+  <div class="box">
+    <% answers.forEach((answer)=>{ %>
+      <p class="answer">
+        <%= answer.text %>
+      </p>
+      <% }) %>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.input-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.input-block label {
+  font-size: 20px;
+}
+
+.input-block input {
+  height: 40px;
+}
+.input-block textarea {
+  height: 80px;
+  resize: none;
+}
+
+.input-block input, .input-block textarea {
+  background: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}

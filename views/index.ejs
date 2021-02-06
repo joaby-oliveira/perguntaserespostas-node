@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/posts.css">
+  <title>Perguntas</title>
+</head>
+<nav class="navbar">
+  <ul>
+    <li><a href="/">Perguntas e respostas</a></li>
+    <li><a href="/perguntar">Perguntar +</a></li>
+  </ul>
+</nav>
+
+<body>
+  <hr>
+  <% questions.forEach((question)=> { %>
+    <div class="post box">
+      <h2 class="title">
+        <%= question.title %>
+      </h2>
+      <p class="description">
+        <%= question.description %> <br>
+      </p>
+      <a href="/pergunta/<%= question.id %>" class="button">Responder</a>
+    </div>
+    <% }) %>
+</body>
+
+</html>
